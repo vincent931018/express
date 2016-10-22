@@ -17,7 +17,7 @@ db.open(function(err,db){
 });
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function(req, res) {
 
         //连接到collection
         db.collection('cwc', function (err, collection) {
@@ -27,11 +27,10 @@ router.get('/', function(req, res, next) {
             }else{
                 collection.find().toArray(function(err,docs){
                 dataList = docs[0];
-                console.log(dataList);
                 });
             }
         });
-        res.render('index',{dataList:dataList.name})
+        res.render('index',{dataList:dataList.name});
 });
 
 module.exports = router;

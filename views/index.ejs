@@ -2,10 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Express</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>DB webApp</title>
 </head>
 <body>
-    Welcome Express!
-    <%=dataList%>
+    <h1>我的第一个数据库应用</h1>
+    <div class="formSubmit">
+        <p>用户名：<input class="userName" type="text"/><br/></p>
+        <p style="margin-right: 0px;">密码：<input style="margin-left: 13px;" type = "password" class="password" type="text"/></p>
+        <div class="cancle">取消</div>
+        <div class="submit">登录</div>
+    </div>
+    <script src="lib/jquery-2.0.0.min.js"></script>
+    <script src="javascripts/index.js"></script>
 </body>
 </html>

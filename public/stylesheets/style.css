@@ -3,6 +3,31 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+/*index.ejs*/
+h1{
+  text-align: center;
+}
+.formSubmit{
+  text-align: center;
+}
+.cancle{
+  float: left;
+  height: 20px;
+  width: 50px;
+  background: #ccc;
+  color: #ffffff;
+  border-radius: 3px;
+  line-height: 20px;
+  margin-left: 43%;
+
+}
+.submit{
+  float: right;
+  height: 20px;
+  width: 50px;
+  background: forestgreen;
+  color: #ffffff;
+  border-radius: 3px;
+  line-height: 20px;
+  margin-right: 43%;
 }
