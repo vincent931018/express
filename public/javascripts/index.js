@@ -12,14 +12,14 @@ $(function() {
         params['userName'] = userName;
         params['password'] = password;
         $.ajax({
-            type: 'GET',
+            type: 'POST',
             url:'/userList',
             data:params
         }).done(function(result){
             if(result.success){
                 location.href='/users';
             }else{
-                alert('没有此人');
+                alert('用户名或密码错误！');
             }
         })
     })
