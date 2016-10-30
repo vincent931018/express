@@ -5,8 +5,10 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var users = require('./routes/users');
 var index = require('./routes/index');
+var PORT = process.env.PORT || 8080;
 
 var app = express();
+app.listen(PORT);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -53,5 +55,7 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+console.log('start up on port:' + PORT);
 
 module.exports = app;

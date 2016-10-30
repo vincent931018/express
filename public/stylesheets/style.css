@@ -4,13 +4,13 @@ body {
 }
 
 /*index.ejs*/
-h1{
+h1 {
   text-align: center;
 }
-.formSubmit{
+.formSubmit {
   text-align: center;
 }
-.cancle{
+.cancle {
   float: left;
   height: 20px;
   width: 50px;
@@ -19,9 +19,8 @@ h1{
   border-radius: 3px;
   line-height: 20px;
   margin-left: 43%;
-
 }
-.submit{
+.submit {
   float: right;
   height: 20px;
   width: 50px;

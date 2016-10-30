@@ -15,7 +15,7 @@ db.open(function(err,db){
         return false;
     }
     else
-        console.log('connect!');
+        console.log('MongoDB is connect!');
 });
 
 /* GET home page. */
@@ -32,7 +32,7 @@ router.get('/', function(req, res) {
         });
 });
 router.post('/userList', function(req, res) {
-    console.log(req.body);
+    // console.log(req.body);
     var userName = req.body.userName;
     var password = req.body.password;
     //连接到collection
@@ -43,8 +43,8 @@ router.post('/userList', function(req, res) {
         }else{
             var tmp = {"userName": userName,"password":password};
             collection.find(tmp).toArray(function (err, result) {
-                console.log(tmp);
-                console.log(result);
+                // console.log(tmp);
+                // console.log(result);
                 resultLength = result.length;
                 if(resultLength == 0){
                     res.json({success:false,result:result});
